@@ -4,7 +4,7 @@ Welcome to the **Waivlength Plugin Starter** repository! This repository provide
 
 ## 📦 Getting Started
 
-### 1️. Clone the Repository
+### 1️⃣ Clone the Repository
 
 Start by cloning the Waivlength Plugin Starter repository to your local machine:
 
@@ -13,7 +13,7 @@ git clone https://github.com/waivlength/waivlength-plugin-starter.git
 cd waivlength-plugin-starter
 ```
 
-### 2️. Install Dependencies
+### 2️⃣ Install Dependencies
 
 Ensure all necessary dependencies are installed:
 
@@ -33,23 +33,25 @@ Here's what each file in the repository does:
 
 ## 🛠 Development Workflow
 
-### Step 1️: Update `manifest.json`
+### Step 1️⃣: Update `manifest.json`
 
 Customize the `manifest.json` file to define your plugin's metadata.
 
-### Step 2️: Write Plugin Logic in `index.js`
+### Step 2️⃣: Write Plugin Logic in `index.js`
 
 Open `index.js` and implement your plugin's functionality.
 
-### Step 3️: Test Your Plugin
+### Step 3️⃣: Test Your Plugin
 
 Run the provided tests to ensure your plugin meets Waivlength standards.
 
-### Step 4️: Submit Your Plugin
+### Step 4️⃣: Submit Your Plugin
 
 When your plugin passes all tests, submit it for review using the Waivlength SDK:
 
-`npx waivlength-sdk submit ./waivlength-plugin-starter`
+```bash
+npx waivlength-sdk submit ./waivlength-plugin-starter
+```
 
 - The SDK validates your plugin, runs additional checks, and submits it for review.
 - You will receive a response indicating whether your plugin has been **accepted** or **rejected**.
