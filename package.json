@@ -1,11 +1,12 @@
 {
   "name": "waivlength-plugin-starter",
   "version": "1.0.0",
-  "description": "Starter pack for developing plugins for the Waivlength platform.",
+  "description": "Waivlength Plugin Starter",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "submit": "npx waivlength-sdk submit ./"
+    "create": "node -e 'require(\"waivlength-sdk\").createPlugin(process.cwd())'",
+    "test": "node -e 'require(\"waivlength-sdk\").testPlugin(process.cwd())'",
+    "submit": "node -e 'require(\"waivlength-sdk\").submitPlugin(process.cwd())'"
   },
   "keywords": [
     "waivlength",
@@ -16,9 +17,6 @@
   "author": "Waivlength",
   "license": "MIT",
   "dependencies": {
-    "waivlength-sdk": "^1.0.0"
-  },
-  "devDependencies": {
-    "jest": "^27.5.1"
+    "waivlength-sdk": "latest"
   }
 }

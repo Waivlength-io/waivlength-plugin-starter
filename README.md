@@ -1,87 +1,51 @@
-# 🚀 Waivlength Plugin Starter
+Welcome to the Waivlength Plugin Starter! This repository provides a simple and guided way for developers to create, test, and submit plugins for the Waivlength SDK.
 
-Welcome to the **Waivlength Plugin Starter** repository! This repository provides all the necessary tools, templates, and instructions to help you develop, test, and submit plugins for the Waivlength platform.
+**Getting Started:**
 
-## 📦 Getting Started
-
-### 1️⃣ Clone the Repository
-
-Start by cloning the Waivlength Plugin Starter repository to your local machine:
+1.  Clone this repository:
 
 ```bash
-git clone https://github.com/waivlength/waivlength-plugin-starter.git
-cd waivlength-plugin-starter
+git clone https://github.com/Waivlength-io/waivlength-plugin-starter.git
 ```
 
-### 2️⃣ Install Dependencies
+2.  Install dependencies:
 
-Ensure all necessary dependencies are installed:
-
-```bash
+````bash
 npm install
 ```
 
-## 🗂 Folder Structure
-
-Here's what each file in the repository does:
-
-- **`manifest.json`**: Defines your plugin's metadata (name, description, permissions, triggers, and entry point).
-- **`index.js`**: Contains the main logic of your plugin.
-- **`validation.test.js`**: Runs tests to validate your plugin's compliance.
-- **`package.json`**: Manages project dependencies and scripts.
-- **`.gitignore`**: Specifies files to exclude from Git commits.
-
-## 🛠 Development Workflow
-
-### Step 1️⃣: Update `manifest.json`
-
-Customize the `manifest.json` file to define your plugin's metadata.
-
-### Step 2️⃣: Write Plugin Logic in `index.js`
-
-Open `index.js` and implement your plugin's functionality.
-
-### Step 3️⃣: Test Your Plugin
-
-Run the provided tests to ensure your plugin meets Waivlength standards.
-
-### Step 4️⃣: Submit Your Plugin
-
-When your plugin passes all tests, submit it for review using the Waivlength SDK:
+3.  Create a Plugin:
 
 ```bash
-npx waivlength-sdk submit ./waivlength-plugin-starter
+npm run create
+````
+
+**Available Commands:**
+
+- **Test the Plugin:**
+
+Validate your plugin's `manifest.json` file and run the plugin's logic using mock data provided by the Waivlength SDK.
+
+```bash
+npm run test
 ```
 
-- The SDK validates your plugin, runs additional checks, and submits it for review.
-- You will receive a response indicating whether your plugin has been **accepted** or **rejected**.
+- **Submit the Plugin:**
 
-## ✅ Validation Details
+Submit your plugin for inclusion in the Waivlength SDK. This process copies your plugin files (`manifest.json` and `index.js`) to the SDK's `community-plugins` directory.
 
-Your plugin must meet the following requirements:
+```bash
+npm run submit
+```
 
-1.  **Valid Manifest**
+**Plugin File Structure:**
 
-    - Ensure `manifest.json` includes all required fields:
-      - `name`
-      - `description`
-      - `permissions`
-      - `triggers`
-      - `entry`
+- `manifest.json`: This file defines your plugin's metadata, including its name, triggers, permissions, and outcomes.
+- `index.js`: The main entry point for your plugin's logic. This file contains the `execute` function that the Waivlength SDK will call.
 
-2.  **Pass All Tests**
+**Notes:**
 
-    - Run `npm test` to ensure your plugin logic and manifest are valid.
+- For plugin testing, the Waivlength SDK provides mock data for permissions and other contextual information.
+- Plugins must pass all tests before they can be submitted to the SDK.
 
-3.  **Logical Integrity**
-
-    - Your plugin logic must adhere to the defined permissions and triggers.
-
-## 📚 Additional Resources
-
-Refer to the **Waivlength SDK Documentation** for detailed information on triggers, permissions, and plugin integration:\
-[Waivlength SDK Documentation](https://github.com/waivlength/waivlength-sdk)
-
-## 📜 License
-
-This repository is licensed under the MIT License.
+For any questions or additional help, please reach out to the Waivlength developer support team or visit our documentation.

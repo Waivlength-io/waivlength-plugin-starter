@@ -1,7 +1,0 @@
-{
-  "name": "Direct Message Responder",
-  "description": "Replies to a user’s message in a DM when they reply to the agent.",
-  "permissions": ["read:messages", "write:messages"],
-  "triggers": ["room-message-reply"],
-  "entry": "index.js"
-}
